@@ -8,7 +8,7 @@
 ?>
 
 
-
+<section>
 <nav id="nav-bar" class="navbar navbar-expand-lg navbar-light bg-white px-lg-3 py-lg-2 shadow-sm sticky-top">
     <div class="container-fluid">
         <a class="navbar-brand me-5 fw-bold fs-3 h-font" href="index.php">Hotel Transalvania</a>
@@ -141,7 +141,7 @@
 </div>
 
 <div class="container-fluid px-lg-4 mt-4">
-    <h1>Msodoki</h1>
+   
     <div class="swiper swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -180,3 +180,5 @@
             <span></span>
         </div>
     </div>
+</div>
+</section>
