@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Login Panel</title>
-    <?php require('views/links.php'); ?>
+    <?php require('links.php'); ?>
     <style>
          div.login-form{
             position: absolute;
@@ -20,7 +20,8 @@
 <body class="bg-light">
 <div class="container-fluid bg-dark text-light p-2 d-flex align-items-center justify-content-between sticky-top">
         <h3 class="mb-0 h-font">HB WEBSITE</h3>
-        <a href=".?action=logout" class="btn btn-light btn-sm">LOG OUT</a>
+        <a href="logout.php"  class="btn btn-light btn-sm">LOG OUT</a>
+     
     </div>
     <div class="col-lg-2 bg-dark border-top border-3 border-secondary" id="dashboard-menu">
         <nav class="navbar navbar-expand-lg navbar-dark">

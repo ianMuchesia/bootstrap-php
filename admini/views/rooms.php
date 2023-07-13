@@ -34,7 +34,9 @@
 
             <div class="modal fade" id="add-room" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
-                    <form id="add_room_form" autocomplete="off">
+                    <form id="add_room_form" autocomplete="off" action="."
+                    method="post" enctype="multipart/form-data">
+                    <input type="hidden" name="action" value="add_room">
                         <div class="modal-content">
                             <div class="modal-header">
                                 <h5 class="modal-title">Add Room</h5>
@@ -43,7 +45,7 @@
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
                                         <label class="form-label fw-bold">Name</label>
-                                        <input type="text" name="name" class="form-control shadow-none" required>
+                                        <input type="text" name="room_name" class="form-control shadow-none" required>
                                     </div>
                                     <div class="col-md-6 mb-3">
                                         <label class="form-label fw-bold">Area</label>
@@ -66,7 +68,7 @@
                                         <input type="number" min="1" name="children" class="form-control shadow-none" required>
                                     </div>
 
-                                    <div class="col-12 mb-3">
+                                    <!-- <div class="col-12 mb-3">
                                         <label class="form-label fw-bold">Features</label>
                                         <div class="row">
                                             <div class='col-md-3'>
@@ -76,17 +78,21 @@
                                                 </label>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
 
                                     <div class="col-12 mb-3">
                                         <label class="form-label fw-bold">Description</label>
                                         <textarea name="desc" rows="4" class="form-control shadow-none" required></textarea>
                                     </div>
                                 </div>
+                                <div class="mb-3">
+                                        <label class="form-label fw-bold">Picture</label>
+                                        <input type="file" name="image" id="carousel_picture_inp" accept="[.jpg, .png, .webp, .jpeg]" class="form-control shadow-none" required>
+                                    </div>
                             </div>
                             <div class="modal-footer">
                                 <button type="reset" class="btn text-secondary shadow-none" data-bs-dismiss="modal">CANCEL</button>
-                                <button type="submit" class="btn custom-bg text-white shadow-none">SUBMIT</button>
+                                <button type="submit" class="btn custom-bg  shadow-none">SUBMIT</button>
                             </div>
                         </div>
                     </form>

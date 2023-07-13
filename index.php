@@ -1,4 +1,15 @@
-<?php require ('views/header.php')?>
+<?php
+
+require("model/database.php");
+
+
+
+ require ('views/header.php');
+
+
+
+
+?>
 
 
     <div class="container availability-form">
