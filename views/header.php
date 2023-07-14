@@ -1,12 +1,16 @@
-<?php
-// require('admin/inc/db_config.php');
-// require('admin/inc/essentials.php');
 
-// $contact_q = "SELECT * FROM `contact_details` WHERE `sr_no`=?";
-// $values = [1];
-// $contact_r = mysqli_fetch_assoc(select($contact_q,$values,'i'));
-?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Transalvania</title>
 
+    <?php require('views/links.php'); ?>
+ 
+</head>
+<body class="bg-light">
 
 <section>
 <nav id="nav-bar" class="navbar navbar-expand-lg navbar-light bg-white px-lg-3 py-lg-2 shadow-sm sticky-top">
@@ -27,7 +31,7 @@
                     <a class="nav-link me-2" href="facilities.php">Facilities</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link me-2" href="contact.php">Contuct us</a>
+                    <a class="nav-link me-2" href="contact.php">Contact us</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link me-2" href="about.php">About</a>
